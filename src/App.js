@@ -1,8 +1,13 @@
+import React from 'react';
+import Loader from './components/Loader/Loader'
+
 import './styles/App.css';
 
 function App() {
   return (
-    <div></div>
+    <>
+      <Loader />
+    </>
   );
 }
 
