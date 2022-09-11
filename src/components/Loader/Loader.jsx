@@ -1,30 +1,20 @@
-import React, { useRef } from "react";
+import React from "react";
 import classes from './Loader.module.css'
 
 function Loader() {
 
-    const loaderVisible = useRef();
-
-    window.onload = function() {
-        /*
-        setTimeout(() => {
-            loaderVisible.current.style.display = 'none';
-        }, 2000);
-        */
-    }
-
     return (
-        <div className={classes.loaderMask} ref={loaderVisible}>
-            <div className={classes.circ}>
-                <div className={classes.hands}></div>
-                <div className={classes.body}></div>
-                <div className={classes.head}>
-                    <div className={classes.eye}></div>
+        <div className={classes.loaderMask}>
+            <div className={classes.waitingMan}>
+                <div className={classes.waitingMan__hands}></div>
+                <div className={classes.waitingMan__body}></div>
+                <div className={classes.waitingMan__head}>
+                    <div className={classes.waitingMan__headEye}></div>
                 </div>
             </div>
-            <div className={classes.load}>Loading . . . </div>
-            <div className={classes.progress}>
-                <div className={classes.progressValue}></div>
+            <div className={classes.loaderHeader}>Loading . . . </div>
+            <div className={classes.progressBar}>
+                <div className={classes.progressBar__value}></div>
             </div>
         </div>
     )
