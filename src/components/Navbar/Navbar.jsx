@@ -11,12 +11,12 @@ function Navbar() {
         <BrowserRouter>
             <nav className="navbar">
                 <div>
-                    <NavLink path="/"><span data-hover="О себе">О себе</span></NavLink>
+                    <NavLink to="/AboutMe"><span data-hover="О себе">О себе</span></NavLink>
                     <NavLink to="/Projects"><span data-hover="Проекты">Проекты</span></NavLink>
                 </div>
             </nav>
             <Routes>
-                <Route index element={<AboutMe />} />
+                <Route path="/AboutMe" element={<AboutMe />} />
                 <Route path="/Projects" element={<Projects />} />
                 <Route path="*" element={<Error />} />
             </Routes>
