@@ -1,0 +1,11 @@
+.anchor {
+    font-family: TriodPostnaja;
+    font-size: 25px;
+    text-decoration: underline;
+    color: #00BFFF;
+}
+
+.anchor:hover {
+    text-decoration: underline overline;
+    color: #00FFFF;
+}

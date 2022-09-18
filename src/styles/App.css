@@ -6,6 +6,19 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #0F0D12;
-    color: #f0dcdc;
+    background-image: url(../images/background.gif);  
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+@font-face {
+    font-family: TriodPostnaja; 
+    src: url(../fonts/TriodPostnaja.ttf);
+}
+
+@font-face {
+    font-family: Woodstick; 
+    src: url(../fonts/Woodstick.ttf);
 }

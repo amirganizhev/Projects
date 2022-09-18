@@ -1,8 +1,12 @@
+.navbar {
+  max-width: 50%;
+  margin: 25px auto;
+}
+
 .navbar div {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: Woodstick;
   text-align: left;
   text-transform: uppercase;
-  font-weight: 500;
 }
 
 .navbar div * {
@@ -20,7 +24,7 @@
 
 .navbar div span {
   padding: 0.3em 0;
-  font-size: 25px;
+  font-size: 35px;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
   display: inline-block;
