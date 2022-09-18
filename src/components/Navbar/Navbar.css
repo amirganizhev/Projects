@@ -3,15 +3,15 @@
   margin: 25px auto;
 }
 
-.navbar div {
+.navbar > div {
   font-family: Woodstick;
   text-align: left;
   text-transform: uppercase;
+  display: flex;
 }
 
 .navbar div * {
   box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
 
@@ -36,7 +36,7 @@
 .navbar div span:before,
 .navbar div span:after {
   position: absolute;
-  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
 

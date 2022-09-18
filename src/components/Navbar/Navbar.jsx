@@ -4,6 +4,7 @@ import './Navbar.css'
 import AboutMe from "../../pages/AboutMe/AboutMe"
 import Projects from "../../pages/Projects/Projects"
 import Error from "../../pages/Error/Error"
+import InputSearch from '../../components/UI/inputs/InputSearch'
 
 function Navbar() {
 
@@ -13,6 +14,7 @@ function Navbar() {
                 <div>
                     <NavLink to="/AboutMe"><span data-hover="О себе">О себе</span></NavLink>
                     <NavLink to="/Projects"><span data-hover="Проекты">Проекты</span></NavLink>
+                    <InputSearch />
                 </div>
             </nav>
             <Routes>

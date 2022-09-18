@@ -2,9 +2,8 @@
     width: 170px;
     height: 40px;
     color: #f0dcdc;
-    border-radius: 5px;
     font-family: Woodstick;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
     background: transparent;
     cursor: pointer;
@@ -35,11 +34,6 @@
     right: 0;
     bottom: 0;
     background: rgba(251,75,2,1);
-    box-shadow:
-    -7px -7px 20px 0px rgba(255,255,255,.9),
-    -4px -4px 5px 0px rgba(255,255,255,.9),
-    7px 7px 20px 0px rgba(0,0,0,.2),
-    4px 4px 5px 0px rgba(0,0,0,.3);
     transition: all 0.3s ease;
 }
 
@@ -73,11 +67,6 @@
     left: 0;
     top: 0;
     background: rgba(251,75,2,1);
-    box-shadow:
-    -7px -7px 20px 0px rgba(255,255,255,.9),
-    -4px -4px 5px 0px rgba(255,255,255,.9),
-    7px 7px 20px 0px rgba(0,0,0,.2),
-    4px 4px 5px 0px rgba(0,0,0,.3);
     transition: all 0.3s ease;
 }
 
