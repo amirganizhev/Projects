@@ -4,7 +4,7 @@ import classes from './Anchor.module.css'
 function Anchor(props) {
 
     return (
-        <a {...props} className={classes.anchor}>{props.children}</a>
+        <a {...props} className={classes.anchor} target="_blank">{props.children}</a>
     )
 
 }

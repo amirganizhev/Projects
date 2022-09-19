@@ -2,12 +2,8 @@ import React from "react";
 import classes from './AboutMe.module.css'
 
 import Paragraph from '../../components/UI/texts/Paragraph'
-import AddButton from '../../components/UI/buttons/AddButton'
-import DeleteButton from '../../components/UI/buttons/DeleteButton'
-import EditButton from '../../components/UI/buttons/EditButton'
 import HeaderText from '../../components/UI/texts/HeaderText'
 import Anchor from '../../components/UI/texts/Anchor'
-import InputText from '../../components/UI/inputs/InputText'
 
 function AboutMe() {
 
@@ -38,13 +34,14 @@ function AboutMe() {
                 <div>Наш стек технологий Frontend: HTML, CSS, JavaScript, JQuery, Kendo UI MVC</div>
                 <div>Список проектов над которыми я работал в компании: 
                     <div>1) <Anchor href="https://erp.holdingbp.ru/">Корпоративная ERP-система</Anchor></div>
-                    <div>2) Сайт <Anchor href="https://avtobus1.ru/">Avtobus1</Anchor></div>
-                    <div>3) Сайт <Anchor href="https://avtobustrans.ru/">Avtobustrans</Anchor></div>
-                    <div>4) Сайт <Anchor href="#">ZakBus</Anchor></div>
-                    <div>5) Сайт <Anchor href="http://edembus.ru/">EdemBus</Anchor></div>
-                    <div>6) Сайт <Anchor href="#">Charterbus</Anchor></div>
-                    <div>7) Сайт <Anchor href="#">Bus1</Anchor></div>
-                    <div>8) Сайт <Anchor href="https://nazmiev.club/">Nazmiev.club</Anchor></div>
+                    <div>2) <Anchor href="http://cms.holdingbp.ru/">CMS-система</Anchor></div>
+                    <div>3) Сайт <Anchor href="https://avtobus1.ru/">Avtobus1</Anchor></div>
+                    <div>4) Сайт <Anchor href="https://avtobustrans.ru/">Avtobustrans</Anchor></div>
+                    <div>5) Сайт <Anchor href="#">ZakBus</Anchor></div>
+                    <div>6) Сайт <Anchor href="http://edembus.ru/">EdemBus</Anchor></div>
+                    <div>7) Сайт <Anchor href="#">Charterbus</Anchor></div>
+                    <div>8) Сайт <Anchor href="#">Bus1</Anchor></div>
+                    <div>9) Сайт <Anchor href="https://nazmiev.club/">Nazmiev.club</Anchor></div>
                 </div>
             </Paragraph>
         </div>
