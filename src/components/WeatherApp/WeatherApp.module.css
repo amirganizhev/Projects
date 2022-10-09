@@ -1,12 +1,12 @@
-.toDoApp {
+.weatherApp {
     margin-top: 50px;
 }
 
-.toDoForm {
+.weatherForm {
     display: flex;
     margin: 35px 0;
 }
 
-.toDoForm > div {
+.weatherForm > div {
     width: 100%;
 }

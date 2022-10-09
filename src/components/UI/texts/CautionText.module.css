@@ -1,0 +1,13 @@
+.cautionText {
+    font-family: Radiotechnika;
+    font-size: 25px;
+    line-height: 1.2em;
+    color: #F08080	;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.7;
+    }
+}

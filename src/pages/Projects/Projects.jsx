@@ -1,7 +1,8 @@
 import React from "react";
 import classes from './Projects.module.css'
-import ToDoApp from "../../components/ToDoApp/ToDoApp";
 import Paragraph from '../../components/UI/texts/Paragraph'
+import ToDoApp from "../../components/ToDoApp/ToDoApp";
+import WeatherApp from "../../components/WeatherApp/WeatherApp";
 
 function Projects() {
 
@@ -16,7 +17,11 @@ function Projects() {
                 2) сам проет, <br/>
                 3) белая черта, отделяющая данный проект от следующих.
             </Paragraph>
+            <hr />
             <ToDoApp />
+            <hr />
+            <WeatherApp />
+            <hr />
         </div>
     )
 

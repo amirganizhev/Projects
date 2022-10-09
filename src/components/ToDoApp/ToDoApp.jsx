@@ -16,7 +16,7 @@ function ToDoApp() {
                 id: Math.random().toString(36).substr(2,9),
                 task: userInput
             }
-            setTodos([...todos, newItem])
+            setTodos([newItem, ...todos])
         }
     }
 
