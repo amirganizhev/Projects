@@ -2,3 +2,12 @@
     border-top: 1px solid white;
     margin-top: 50px;
 }
+
+.toDoForm {
+    display: flex;
+    margin: 35px 0;
+}
+
+.toDoForm > div {
+    width: 100%;
+}

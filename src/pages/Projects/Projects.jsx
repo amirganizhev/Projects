@@ -1,8 +1,6 @@
 import React from "react";
 import classes from './Projects.module.css'
-
 import ToDoApp from "../../components/ToDoApp/ToDoApp";
-
 import Paragraph from '../../components/UI/texts/Paragraph'
 
 function Projects() {

@@ -1,39 +1,19 @@
-import { useState } from "react";
+import React from "react";
 import classes from './InputText.module.css'
-import AddButton from '../buttons/AddButton'
 
-function InputText({ addTask }) {
-
-    const [userInput, setUserInput] = useState('')
-    
-    function handleChange(e) {
-        setUserInput(e.currentTarget.value)
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault()
-        addTask(userInput)
-        setUserInput('')
-    }
-
-    function handleKeyPress(e) {
-        if (e.key === 'Enter') {
-            handleSubmit(e)
-        }
-    }
+function InputText(props) {
 
     return (
-        <form className={classes.inputText} onSubmit={handleSubmit}>
+        <div className={classes.inputText}>
             <input 
-                type="text" 
-                placeholder="Введите значение..." 
-                value={userInput} 
-                onChange={handleChange}
-                onKeyDown={handleKeyPress}
+                type="text"
+                placeholder={props.placeholder}
+                value={props.value}
+                onChange={props.onChange}
+                onKeyDown={props.onKeyDown}
             />
-            <label htmlFor="galaxy">Город</label>
-            <AddButton>Добавить</AddButton>
-        </form>
+            <label>{props.label}</label>
+        </div>
     )
 
 }
