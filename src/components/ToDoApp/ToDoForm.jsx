@@ -14,6 +14,7 @@ function ToDoForm({ addTask }) {
     function handleSubmit(e) {
         e.preventDefault()
         addTask(userInput)
+        setUserInput('')
     }
 
     function handleKeyPress(e) {

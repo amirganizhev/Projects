@@ -6,7 +6,7 @@ function InputText(props) {
     const inputValue = useRef();
 
     document.onclick = function(e) {
-        if (e.target.type !== "text") {
+        if (e.target.type !== "text" && inputValue.current.value !== '') {
             setTimeout(() => {
                 inputValue.current.value = '';
             }, 100);
