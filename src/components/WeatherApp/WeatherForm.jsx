@@ -1,22 +1,22 @@
-import { useState } from "react";
+import React from "react";
 import classes from './WeatherApp.module.css'
 import AddButton from '../UI/buttons/AddButton'
 import InputText from '../UI/inputs/InputText'
 
-function WeatherForm() {
+function WeatherForm({citySearchBtnClick, onChange}) {
+
+    function handleCityChange(e) {
+        onChange(e.target.value);
+    }
 
     return (
-        <form className={classes.weatherForm} /*onSubmit={handleSubmit}*/>
+        <form className={classes.weatherForm} onSubmit={(e) => e.preventDefault()}>
             <InputText 
                 placeholder="Введите город..." 
-                label="Узнать погоду в городе" 
-                /*
-                value={userInput} 
-                onChange={handleChange}
-                onKeyDown={handleKeyPress}
-                */
+                label="Узнать погоду в городе"
+                onChange={handleCityChange}
             />
-            <AddButton>Узнать</AddButton>
+            <AddButton onClick={citySearchBtnClick}>Узнать</AddButton>
         </form>
     )
 
