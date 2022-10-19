@@ -3,6 +3,7 @@ import classes from './Projects.module.css'
 import Paragraph from '../../components/UI/texts/Paragraph'
 import ToDoApp from "../../components/ToDoApp/ToDoApp";
 import WeatherApp from "../../components/WeatherApp/WeatherApp";
+import Counter from "../../components/Counter/Counter";
 
 function Projects() {
 
@@ -22,6 +23,7 @@ function Projects() {
             <hr />
             <WeatherApp />
             <hr />
+            <Counter />
         </div>
     )
 
