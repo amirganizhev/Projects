@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import classes from './Counter.module.css'
 
 import HeaderText from '../../components/UI/texts/HeaderText'

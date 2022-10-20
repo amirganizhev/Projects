@@ -4,6 +4,7 @@ import Paragraph from '../../components/UI/texts/Paragraph'
 import ToDoApp from "../../components/ToDoApp/ToDoApp";
 import WeatherApp from "../../components/WeatherApp/WeatherApp";
 import Counter from "../../components/Counter/Counter";
+import ModalWindow from "../../components/ModalWindow/ModalWindow";
 
 function Projects() {
 
@@ -24,6 +25,8 @@ function Projects() {
             <WeatherApp />
             <hr />
             <Counter />
+            <hr />
+            <ModalWindow />
         </div>
     )
 
