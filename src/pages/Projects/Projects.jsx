@@ -5,6 +5,7 @@ import ToDoApp from "../../components/ToDoApp/ToDoApp";
 import WeatherApp from "../../components/WeatherApp/WeatherApp";
 import Counter from "../../components/Counter/Counter";
 import ModalWindow from "../../components/ModalWindow/ModalWindow";
+import CreditCalculator from "../../components/CreditCalculator/CreditCalculator";
 
 function Projects() {
 
@@ -24,9 +25,11 @@ function Projects() {
             <hr />
             <WeatherApp />
             <hr />
-            <Counter />
+            <CreditCalculator />
             <hr />
             <ModalWindow />
+            <hr />
+            <Counter />
         </div>
     )
 

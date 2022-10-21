@@ -5,13 +5,13 @@ function InputText(props) {
 
     const inputValue = useRef();
 
-    document.onclick = function(e) {
-        if (e.target.type !== "text" && inputValue.current.value !== '') {
-            setTimeout(() => {
-                inputValue.current.value = '';
-            }, 100);
-        }
-    }
+    // document.onclick = function(e) {
+    //     if (e.target.type !== "text" && inputValue.current.value !== '') {
+    //         setTimeout(() => {
+    //             inputValue.current.value = '';
+    //         }, 100);
+    //     }
+    // }
 
     return (
         <div className={classes.inputText}>

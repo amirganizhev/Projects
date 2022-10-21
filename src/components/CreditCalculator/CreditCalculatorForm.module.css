@@ -1,0 +1,8 @@
+.creditCalculatorForm > div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.creditCalculatorForm button {
+    width: 100%;
+}
