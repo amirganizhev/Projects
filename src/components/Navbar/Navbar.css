@@ -59,7 +59,7 @@
   white-space: nowrap;
 }
 
-.navbar div a:hover span,
-.navbar div .active span {
+.navbar div a:hover span/*,
+.navbar div .active span*/ {
   transform: translateY(-100%);
 }
