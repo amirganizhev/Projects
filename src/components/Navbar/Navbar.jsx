@@ -11,7 +11,7 @@ function Navbar() {
         <BrowserRouter>
             <nav className="navbar">
                 <div>
-                    <NavLink to="/AboutMe"><span data-hover="О себе">О себе</span></NavLink>
+                    <NavLink to="/AboutMe" exact><span data-hover="О себе">О себе</span></NavLink>
                     <NavLink to="/Projects"><span data-hover="Проекты">Проекты</span></NavLink>
                 </div>
             </nav>
