@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.49cccbeb.css",
+    "main.js": "/Portfolio/static/js/main.60e040d7.js",
+    "static/media/background.gif": "/Portfolio/static/media/background.28a341fa944d42f366c4.gif",
+    "static/media/Woodstick.ttf": "/Portfolio/static/media/Woodstick.f812e25df9443b5546e2.ttf",
+    "static/media/error.png": "/Portfolio/static/media/error.929177cd817288d4b981.png",
+    "static/media/Radiotechnika.ttf": "/Portfolio/static/media/Radiotechnika.cf5c6bb80179f5cd2393.ttf",
+    "static/media/telegram.svg": "/Portfolio/static/media/telegram.785e591a81253ae379f522fb169704e3.svg",
+    "static/media/vk.svg": "/Portfolio/static/media/vk.2de8d54ee1ecc3251a78cd6bac724479.svg",
+    "static/media/github.svg": "/Portfolio/static/media/github.eda90ed63ecbc0e1ea50b4902b31c489.svg",
+    "static/media/mail.svg": "/Portfolio/static/media/mail.6165fe6ec9f37012695805286f1b499f.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.49cccbeb.css.map": "/Portfolio/static/css/main.49cccbeb.css.map",
+    "main.60e040d7.js.map": "/Portfolio/static/js/main.60e040d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49cccbeb.css",
+    "static/js/main.60e040d7.js"
+  ]
+}
