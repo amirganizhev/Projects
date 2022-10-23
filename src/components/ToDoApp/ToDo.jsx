@@ -14,12 +14,14 @@ function ToDo({ todo, removeTask }) {
             </Paragraph>
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <button 
+                    className="deleteButton"
                     style={{margin: '10px'}} 
                     onClick={() => removeTask(todo.id)}
                 >
                     <span>Удалить</span>
                 </button>
                 <button 
+                    className="editButton"
                     style={{margin: '10px'}} 
                     onClick={() => {
                         setMark('line-through');
