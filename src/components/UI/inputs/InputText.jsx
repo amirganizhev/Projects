@@ -12,7 +12,6 @@ function InputText(props) {
                 onChange={props.onChange}
                 onKeyDown={props.onKeyDown}
             />
-            <label>{props.label}</label>
         </div>
     )
 

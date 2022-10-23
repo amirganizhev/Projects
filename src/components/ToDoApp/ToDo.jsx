@@ -11,7 +11,7 @@ function ToDo({ todo, removeTask }) {
 
     return (
         <div key={todo.id} style={{backgroundColor: markBackground, padding: '20px', marginBottom: '20px', borderRadius: '20px'}}>
-            <Paragraph style={{textDecoration: mark, backgroundColor: 'white', margin: '20px', padding: '20px', color: 'black', textAlign: 'center'}}>
+            <Paragraph style={{textDecoration: mark, backgroundColor: 'white', margin: '10px', padding: '20px', color: 'black', textAlign: 'center'}}>
                 {todo.task}
             </Paragraph>
             <div style={{display: 'flex', justifyContent: 'center'}}>

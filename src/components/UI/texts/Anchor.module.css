@@ -9,3 +9,9 @@
     text-decoration: underline overline;
     color: #00FFFF;
 }
+
+@media (max-width: 700px) {
+    .anchor {
+        font-size: 16px;
+    }
+}

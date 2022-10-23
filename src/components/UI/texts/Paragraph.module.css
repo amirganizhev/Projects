@@ -4,3 +4,9 @@
     line-height: 1.2em;
     color: #f0dcdc;
 }
+
+@media (max-width: 700px) {
+    .paragraph {
+        font-size: 16px;
+    }
+}

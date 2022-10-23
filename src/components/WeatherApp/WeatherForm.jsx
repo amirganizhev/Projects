@@ -12,8 +12,7 @@ function WeatherForm({citySearchBtnClick, onChange}) {
     return (
         <form className={classes.weatherForm} onSubmit={(e) => e.preventDefault()}>
             <InputText 
-                placeholder="Введите город..." 
-                label="Узнать погоду в городе"
+                placeholder="Введите город..."
                 onChange={handleCityChange}
             />
             <AddButton onClick={citySearchBtnClick}>Узнать</AddButton>

@@ -27,3 +27,9 @@
     width: 20px;
     height: 20px;
 }
+
+@media (max-width: 1200px) {
+    .footer {
+        width: 90%;
+    }
+}

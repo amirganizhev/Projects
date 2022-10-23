@@ -6,3 +6,9 @@
 .creditCalculatorForm button {
     width: 100%;
 }
+
+@media (max-width: 700px) {
+    .creditCalculatorForm button {
+        margin-bottom: 30px;
+    }
+}

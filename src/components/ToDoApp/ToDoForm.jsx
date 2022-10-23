@@ -26,8 +26,7 @@ function ToDoForm({ addTask }) {
     return (
         <form className={classes.toDoForm} onSubmit={handleSubmit}>
             <InputText 
-                placeholder="Введите задачу..." 
-                label="Добавить задачу" 
+                placeholder="Введите задачу..."
                 value={userInput} 
                 onChange={handleChange}
                 onKeyDown={handleKeyPress}

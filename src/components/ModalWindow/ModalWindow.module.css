@@ -1,5 +1,5 @@
 .modalWindowBlock button:first-child {
-    width: 200px !important;
+    width: 100%;
 }
 
 .modalWindow {
@@ -33,4 +33,20 @@
     margin-right: auto;
     margin-left: auto;
     width: 100%;
+}
+
+@media (max-width: 1500px) {
+    .modalWindow div {
+        width: 70%;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 700px) {
+    .modalWindowBlock button:first-child {
+        margin-bottom: 30px;
+    }
+    .modalWindow div {
+        margin-top: 40%;
+    }
 }

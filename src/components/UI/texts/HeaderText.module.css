@@ -4,3 +4,9 @@
     text-transform: uppercase;
     color: #f0dcdc;
 }
+
+@media (max-width: 400px) {
+    .headerText {
+        font-size: 20px;
+    }
+}

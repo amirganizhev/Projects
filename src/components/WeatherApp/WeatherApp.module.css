@@ -1,7 +1,3 @@
-.weatherApp {
-    margin-top: 50px;
-}
-
 .weatherForm {
     display: flex;
     margin: 35px 0;
@@ -9,4 +5,16 @@
 
 .weatherForm > div {
     width: 100%;
+}
+
+@media (max-width: 700px) {
+    .weatherForm {
+        display: block;
+    }
+    .weatherForm > div {
+        margin-bottom: 30px;
+    }
+    .weatherForm > button {
+        width: 100%;
+    }
 }

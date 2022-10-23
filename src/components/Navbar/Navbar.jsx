@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import './Navbar.css'
 import AboutMe from "../../pages/AboutMe/AboutMe"
 import Projects from "../../pages/Projects/Projects"
@@ -11,8 +11,8 @@ function Navbar() {
         <BrowserRouter>
             <nav className="navbar">
                 <div>
-                    <NavLink to="/"><span data-hover="О себе">О себе</span></NavLink>
-                    <NavLink to="/Projects"><span data-hover="Проекты">Проекты</span></NavLink>
+                    <Link to="/"><span data-hover="О себе">О себе</span></Link>
+                    <Link to="/Projects"><span data-hover="Проекты">Проекты</span></Link>
                 </div>
             </nav>
             <Routes>
