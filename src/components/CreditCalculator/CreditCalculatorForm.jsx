@@ -2,7 +2,6 @@ import { useState } from 'react';
 import classes from './CreditCalculatorForm.module.css'
 
 import InputText from '../UI/inputs/InputText'
-import AddButton from '../UI/buttons/AddButton'
 
 function CreditCalculatorForm() {
 
@@ -55,7 +54,9 @@ function CreditCalculatorForm() {
                 value={creditPercent}
                 onChange={creditPercentOnChange}
             />
-            <AddButton>Подсчитать</AddButton>
+            <button className="addButton">
+                <span>Подсчитать</span>
+            </button>
         </form>
     )
 

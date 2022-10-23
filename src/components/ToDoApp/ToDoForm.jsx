@@ -1,6 +1,5 @@
 import { useState } from "react";
 import classes from './ToDoApp.module.css'
-import AddButton from '../UI/buttons/AddButton'
 import InputText from '../UI/inputs/InputText'
 
 function ToDoForm({ addTask }) {
@@ -31,7 +30,9 @@ function ToDoForm({ addTask }) {
                 onChange={handleChange}
                 onKeyDown={handleKeyPress}
             />
-            <AddButton>Добавить</AddButton>
+            <button className="addButton">
+                <span>Добавить</span>
+            </button>
         </form>
     )
 

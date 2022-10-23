@@ -1,7 +1,5 @@
 import {useState} from "react";
 import Paragraph from '../../components/UI/texts/Paragraph'
-import EditButton from '../UI/buttons/EditButton'
-import DeleteButton from '../UI/buttons/DeleteButton'
 
 function ToDo({ todo, removeTask }) {
 
@@ -15,20 +13,21 @@ function ToDo({ todo, removeTask }) {
                 {todo.task}
             </Paragraph>
             <div style={{display: 'flex', justifyContent: 'center'}}>
-                <DeleteButton 
+                <button 
                     style={{margin: '10px'}} 
-                    onClick={() => removeTask(todo.id)
-                }>
-                    Удалить
-                </DeleteButton>
-                <EditButton 
+                    onClick={() => removeTask(todo.id)}
+                >
+                    <span>Удалить</span>
+                </button>
+                <button 
                     style={{margin: '10px'}} 
                     onClick={() => {
                         setMark('line-through');
                         setMarkBackground('#F19CBB');
-                    }}>
-                    Отметить
-                </EditButton>
+                    }}
+                >
+                    <span>Отметить</span>
+                </button>
             </div>
         </div>
     )

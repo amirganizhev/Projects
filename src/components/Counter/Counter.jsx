@@ -3,8 +3,6 @@ import classes from './Counter.module.css'
 
 import HeaderText from '../../components/UI/texts/HeaderText'
 import Paragraph from '../../components/UI/texts/Paragraph'
-import AddButton from '../UI/buttons/AddButton'
-import DeleteButton from '../UI/buttons/DeleteButton'
 
 function Counter() {
 
@@ -23,8 +21,12 @@ function Counter() {
             <HeaderText>Счетчик</HeaderText>
             <Paragraph>{count}</Paragraph>
             <div>
-                <AddButton onClick={increment}>+</AddButton>
-                <DeleteButton onClick={decrement}>-</DeleteButton>
+                <button onClick={increment} className="addButton">
+                    <span>+</span>
+                </button>
+                <button onClick={decrement} className="deleteButton">
+                    <span>-</span>
+                </button>
             </div>
         </div>
     )
