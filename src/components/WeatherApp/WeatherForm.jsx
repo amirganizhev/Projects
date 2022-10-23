@@ -1,6 +1,5 @@
 import React from "react";
 import classes from './WeatherApp.module.css'
-import AddButton from '../UI/buttons/AddButton'
 import InputText from '../UI/inputs/InputText'
 
 function WeatherForm({citySearchBtnClick, onChange}) {
@@ -15,7 +14,9 @@ function WeatherForm({citySearchBtnClick, onChange}) {
                 placeholder="Введите город..."
                 onChange={handleCityChange}
             />
-            <AddButton onClick={citySearchBtnClick}>Узнать</AddButton>
+            <button onClick={citySearchBtnClick} className="addButton">
+                <span>Узнать</span>
+            </button>
         </form>
     )
 
