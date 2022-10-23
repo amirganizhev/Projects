@@ -14,23 +14,25 @@ function CreditCalculatorForm() {
         e.preventDefault();
         let totalAmount = creditAmount + (((creditAmount / 100) * (creditTerm / 12)) * (creditPercent * 12));
         let monthlyPayment = totalAmount / (creditTerm * 12);
-        alert("Общая сумма к возврату: " + Math.round(totalAmount) + " рублей");
-	    alert("Ежемесячный платеж: " + Math.round(monthlyPayment) + " рублей");
+        alert(`
+            Общая сумма к возврату: ${Math.round(totalAmount)} рублей
+            Ежемесячный платеж: ${Math.round(monthlyPayment)} рублей
+        `);
+        setCreditAmount('');
+        setCreditTerm('');
+        setCreditPercent('');
     }
 
     function creditAmountOnChange(e) {
         setCreditAmount(e.target.value)
-        console.log(creditAmount);
     }
 
     function creditTermOnChange(e) {
         setCreditTerm(e.target.value)
-        console.log(creditTerm);
     }
 
     function creditPercentOnChange(e) {
         setCreditPercent(e.target.value)
-        console.log(creditPercent);
     }
 
     return (
