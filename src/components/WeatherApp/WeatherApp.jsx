@@ -4,11 +4,13 @@ import classes from './WeatherApp.module.css'
 import HeaderText from '../../components/UI/texts/HeaderText'
 import Paragraph from '../../components/UI/texts/Paragraph'
 import CautionText from '../../components/UI/texts/CautionText'
+import ImportantText from '../../components/UI/texts/ImportantText'
 import WeatherForm from './WeatherForm'
 import WeatherList from './WeatherList'
 
 function WeatherApp() {
 
+    const [serverStatus, setServerStatus] = useState('');
     const [countryList, setcountryList] = useState('...');
     const [selectedCity, setSelectedCity] = useState('...');
     const [temperature, setTemperature] = useState('...');
@@ -31,6 +33,7 @@ function WeatherApp() {
         })
         /*Что выводить*/
         .then(function (data) {
+            setServerStatus('Город найден, сервер работает стабильно')
             setcountryList(data.sys.country);
             setSelectedCity(data.name);
             setTemperature(Math.round(data.main.temp - 273));
@@ -43,13 +46,13 @@ function WeatherApp() {
         })
         /*Обработка ошибок*/
         .catch(function () {
-            alert('Данного города нет в нашем списке')
+            setServerStatus('Ошибка сервера, либо данного города нет в нашем списке')
         }) 
     }
 
     useEffect(() => {
         weatherSearch();
-    }, []);
+    });
 
     function handleCityChange(cityValue) {
         setSityValue(cityValue);
@@ -72,6 +75,7 @@ function WeatherApp() {
                     weatherSearch();
                 }}
             />
+            <ImportantText>{serverStatus}</ImportantText>
             <WeatherList 
                 countryList={countryList}
                 selectedCity={selectedCity}

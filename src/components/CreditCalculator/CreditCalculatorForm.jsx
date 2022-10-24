@@ -2,21 +2,23 @@ import { useState } from 'react';
 import classes from './CreditCalculatorForm.module.css'
 
 import InputText from '../UI/inputs/InputText'
+import Paragraph from '../../components/UI/texts/Paragraph'
+import ImportantText from '../../components/UI/texts/ImportantText'
 
 function CreditCalculatorForm() {
 
     const [creditAmount, setCreditAmount] = useState('');
     const [creditTerm, setCreditTerm] = useState('');
     const [creditPercent, setCreditPercent] = useState('');
+    const [totalAmountInner, setTotalAmountInner] = useState(0);
+    const [monthlyPaymentInner, setMonthlyPaymentInner] = useState(0);
 
     function paymentCalculation(e) {
         e.preventDefault();
         let totalAmount = creditAmount + (((creditAmount / 100) * (creditTerm / 12)) * (creditPercent * 12));
         let monthlyPayment = totalAmount / (creditTerm * 12);
-        alert(`
-            Общая сумма к возврату: ${Math.round(totalAmount)} рублей
-            Ежемесячный платеж: ${Math.round(monthlyPayment)} рублей
-        `);
+        setTotalAmountInner(Math.round(totalAmount));
+        setMonthlyPaymentInner(Math.round(monthlyPayment));
         setCreditAmount('');
         setCreditTerm('');
         setCreditPercent('');
@@ -57,6 +59,8 @@ function CreditCalculatorForm() {
             <button className="addButton">
                 <span>Подсчитать</span>
             </button>
+            <Paragraph>Общая сумма к возврату: <ImportantText>{totalAmountInner} рублей</ImportantText></Paragraph>
+            <Paragraph>Ежемесячный платеж: <ImportantText>{monthlyPaymentInner} рублей</ImportantText></Paragraph>
         </form>
     )
 
