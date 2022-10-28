@@ -29,7 +29,7 @@ function AboutMe() {
             </Paragraph>
             <HeaderText>Опыт работы</HeaderText>
             <Paragraph>
-                На первую работу в IT, я устроился 16 ноября 2021 года, в компанию "AVTOBUS1", 
+                На первую работу в IT, я устроился 16 ноября 2020 года, в компанию "AVTOBUS1", 
                 на должность "Frontent-разработчик". На данный момент работаю там же. <br/>
                 Стек технологий Backend: <br/><ImportantText>C#, .NET</ImportantText> <br/>
                 Стек технологий Frontend: <br/><ImportantText>HTML, CSS, JavaScript, JQuery, Kendo UI MVC</ImportantText> <br/>
